@@ -1,0 +1,16 @@
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.badges img {
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.badges img:hover {
+    transform: scale(1.1);
+}

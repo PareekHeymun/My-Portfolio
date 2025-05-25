@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Heymun Pareek - Full Stack Developer, AI/ML Enthusiast, and Cybersecurity Researcher">
+    <meta name="keywords" content="Heymun Pareek, Full Stack Developer, AI/ML, Cybersecurity, Web Development">
+    <title>Heymun Pareek - Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    
+    <!-- Core Libraries -->
+    <script src="lib/scrollreveal.min.js" onerror="console.error('Failed to load ScrollReveal')"></script>
+    <script src="lib/matter.min.js" onerror="console.error('Failed to load Matter.js')"></script>
+    <script src="lib/particles.min.js" onerror="console.error('Failed to load Particles.js')"></script>
+    <script src="lib/typed.min.js" onerror="console.error('Failed to load Typed.js')"></script>
+    <script src="lib/chart.min.js" onerror="console.error('Failed to load Chart.js')"></script>
+    <script src="lib/aos.js" onerror="console.error('Failed to load AOS')"></script>
+    <link href="lib/aos.css" rel="stylesheet">
+    
+    <!-- Animation Libraries -->
+    <script src="lib/gsap.min.js" onerror="console.error('Failed to load GSAP')"></script>
+    <script src="lib/ScrollTrigger.min.js" onerror="console.error('Failed to load ScrollTrigger')"></script>
+    <script src="lib/three.min.js" onerror="console.error('Failed to load Three.js')"></script>
+    
+    <!-- UI Libraries -->
+    <script src="lib/swiper-bundle.min.js" onerror="console.error('Failed to load Swiper')"></script>
+    <link rel="stylesheet" href="lib/swiper-bundle.min.css">
+    <script src="lib/highlight.min.js" onerror="console.error('Failed to load Highlight.js')"></script>
+    <link rel="stylesheet" href="lib/highlight.min.css">
+    <script src="lib/vanilla-tilt.min.js" onerror="console.error('Failed to load Vanilla Tilt')"></script>
+    <script src="lib/isotope.pkgd.min.js" onerror="console.error('Failed to load Isotope')"></script>
+
+    <!-- Custom Scripts -->
+    <script src="script.js" defer></script>
+    <script src="animations.js" defer></script>
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch" class="theme-switch">
+        <label for="theme-switch" class="theme-label">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </label>
+    </div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="logo">Heymun Pareek</a>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#stats" class="nav-link">Stats</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1 class="gradient-text">Heymun Pareek</h1>
+                <div class="typing-container">
+                    <span class="static-text">I'm a</span>
+                    <span class="typing-text"></span>
+                </div>
+                <p class="hero-description">
+                    Building innovative solutions with a focus on AI/ML, web development, and cybersecurity.
+                    Currently exploring the intersection of technology and real-world applications.
+                </p>
+                <div class="hero-badges">
+                    <div class="badge">
+                        <i class="fas fa-brain"></i>
+                        <span>AI/ML Enthusiast</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Cybersecurity</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-code-branch"></i>
+                        <span>73+ GitHub Repos</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#projects" class="cta-button primary">View Projects</a>
+                    <a href="#contact" class="cta-button secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p>
+                        I'm a passionate Full Stack Developer with a strong foundation in web technologies
+                        and a keen interest in cybersecurity. My journey in software development
+                        has equipped me with the skills to build robust and secure applications.
+                    </p>
+                    <p>
+                        When I'm not coding, you can find me solving algorithmic problems on LeetCode,
+                        contributing to open-source projects, or exploring new technologies in cybersecurity
+                        and AI/ML to stay at the forefront of technology.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">Problems Solved</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-container" data-aos="fade-left">
+                    <div class="image-frame">
+                        <img src="mybash.jfif" alt="Heymun Pareek">
+                    </div>
+                    <div class="image-decoration"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My Projects</h2>
+            <div class="projects-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="other">Other</button>
+            </div>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Skills & Expertise</h2>
+            <div class="skills-container">
+                <div class="skills-chart" data-aos="fade-right">
+                    <canvas id="skillsChart"></canvas>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category" data-aos="fade-up">
+                        <h3 class="skill-category-title">Programming Languages</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <i class="fab fa-js skill-icon"></i>
+                                <span>JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="90"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <i class="fab fa-python skill-icon"></i>
+                                <span>Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="85"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <i class="fab fa-java skill-icon"></i>
+                                <span>Java</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="80"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="skill-category-title">Frontend Development</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <i class="fab fa-react skill-icon"></i>
+                                <span>React</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="95"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <i class="fab fa-html5 skill-icon"></i>
+                                <span>HTML5</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="90"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <i class="fab fa-css3-alt skill-icon"></i>
+                                <span>CSS3</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="90"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="skill-category-title">Backend & Security</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <i class="fab fa-node-js skill-icon"></i>
+                                <span>Node.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="85"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <i class="fas fa-shield-alt skill-icon"></i>
+                                <span>Cybersecurity</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="80"></div>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <i class="fas fa-server skill-icon"></i>
+                                <span>Express.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="85"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My Stats</h2>
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="fade-up">
+                    <h3>GitHub Activity</h3>
+                    <div id="github-stats" class="loading">
+                        <!-- GitHub stats will be loaded here -->
+                    </div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>LeetCode Stats</h3>
+                    <div id="leetcode-stats" class="loading">
+                        <!-- LeetCode stats will be loaded here -->
+                    </div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Codeforces Stats</h3>
+                    <div id="codeforces-stats" class="loading">
+                        <!-- Codeforces stats will be loaded here -->
+                    </div>
+                </div>
+            </div>
+            <div class="contribution-graph" data-aos="fade-up">
+                <h3>GitHub Contributions</h3>
+                <div class="graph-container">
+                    <img src="https://ghchart.rshah.org/4f46e5/PareekHeymun" alt="GitHub Contributions">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <span>heymun.microsoft@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <span>India</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/PareekHeymun" class="social-link" target="_blank" data-tooltip="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://leetcode.com/u/sshclient/" class="social-link" target="_blank" data-tooltip="LeetCode">
+                            <i class="fas fa-code"></i>
+                        </a>
+                        <a href="https://www.codechef.com/users/heymunpareek" class="social-link" target="_blank" data-tooltip="CodeChef">
+                            <i class="fas fa-laptop-code"></i>
+                        </a>
+                        <a href="https://codeforces.com/profile/heymunpareek" class="social-link" target="_blank" data-tooltip="Codeforces">
+                            <i class="fas fa-trophy"></i>
+                        </a>
+                        <a href="https://huggingface.co/Heymun" class="social-link" target="_blank" data-tooltip="Hugging Face">
+                            <i class="fas fa-robot"></i>
+                        </a>
+                        <a href="https://youtube.com/@HeymunPareek" class="social-link" target="_blank" data-tooltip="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/heymun-pareek" class="social-link" target="_blank" data-tooltip="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://discord.com/users/hp5041" class="social-link" target="_blank" data-tooltip="Discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" data-aos="fade-left">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="cta-button primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- YouTube Channel Section -->
+    <section id="youtube" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My YouTube Channel</h2>
+            <div class="youtube-container" data-aos="fade-up">
+                <div class="tv-frame">
+                    <div class="tv-screen">
+                        <div class="youtube-placeholder">
+                            <i class="fab fa-youtube"></i>
+                            <h3>Coming Soon</h3>
+                            <p>I'm preparing exciting tech content for you!</p>
+                            <div class="placeholder-videos">
+                                <div class="placeholder-video">
+                                    <div class="thumbnail"></div>
+                                    <div class="info">
+                                        <h4>Tech Tutorials</h4>
+                                        <p>Coming soon</p>
+                                    </div>
+                                </div>
+                                <div class="placeholder-video">
+                                    <div class="thumbnail"></div>
+                                    <div class="info">
+                                        <h4>Coding Tips</h4>
+                                        <p>Coming soon</p>
+                                    </div>
+                                </div>
+                                <div class="placeholder-video">
+                                    <div class="thumbnail"></div>
+                                    <div class="info">
+                                        <h4>AI/ML Insights</h4>
+                                        <p>Coming soon</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tv-controls">
+                        <div class="tv-button"></div>
+                        <div class="tv-button"></div>
+                        <div class="tv-button"></div>
+                    </div>
+                </div>
+                <div class="youtube-info">
+                    <h3>@HeymunPareek</h3>
+                    <p>Subscribe to my channel for upcoming tech tutorials, coding tips, and AI/ML insights!</p>
+                    <a href="https://youtube.com/@HeymunPareek" target="_blank" class="cta-button primary">
+                        <i class="fab fa-youtube"></i> Subscribe
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section id="content" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Latest Content</h2>
+            <div class="content-grid">
+                <div class="content-card youtube-card" data-aos="fade-up">
+                    <h3>Latest YouTube Posts</h3>
+                    <div id="youtube-feed" class="content-scroll-container loading">
+                        <!-- YouTube posts will be loaded here -->
+                    </div>
+                </div>
+                <div class="content-card huggingface-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Hugging Face Projects</h3>
+                    <div id="huggingface-projects" class="content-scroll-container loading">
+                        <!-- Hugging Face projects will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Section -->
+    <section id="github" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">GitHub Activity</h2>
+            <div class="github-grid">
+                <div class="github-card" data-aos="fade-up">
+                    <h3>PareekHeymun</h3>
+                    <div id="github-stats-1" class="loading">
+                        <!-- GitHub stats will be loaded here -->
+                    </div>
+                </div>
+                <div class="github-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>heymunpareek (Archived)</h3>
+                    <div id="github-stats-2" class="loading">
+                        <!-- GitHub stats will be loaded here -->
+                    </div>
+                </div>
+            </div>
+            <div class="contribution-graph" data-aos="fade-up">
+                <h3>GitHub Contributions</h3>
+                <div class="graph-container">
+                    <img src="https://ghchart.rshah.org/4f46e5/PareekHeymun" alt="GitHub Contributions">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Heymun Pareek. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
